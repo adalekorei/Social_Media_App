@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:user_repository/src/entities/entities.dart';
-import 'package:user_repository/src/models/my_user.dart';
+import 'package:user_repository/src/models/models.dart';
 
 import 'user_repo.dart';
 
