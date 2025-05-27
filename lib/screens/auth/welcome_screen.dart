@@ -59,7 +59,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                       padding: EdgeInsets.all(12),
                       child: Text(
                         'Sign In',
-                        style: theme.textTheme.titleMedium?.copyWith(
+                        style: theme.textTheme.bodyMedium?.copyWith(
                           color: Colors.white,
                         ),
                       ),
@@ -68,7 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                       padding: EdgeInsets.all(12),
                       child: Text(
                         'Sign Up',
-                        style: theme.textTheme.titleMedium?.copyWith(
+                        style: theme.textTheme.bodyMedium?.copyWith(
                           color: Colors.white,
                         ),
                       ),

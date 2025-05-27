@@ -28,14 +28,44 @@ final lightTheme = ThemeData(
       fontSize: 20,
       fontWeight: FontWeight.w500,
     ),
+    bodyLarge: TextStyle(
+      color: Colors.white,
+      fontSize: 24,
+      fontWeight: FontWeight.w500,
+    ),
+    bodySmall: TextStyle(
+      color: Colors.white,
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+    ),
     labelSmall: TextStyle(
-      color: Color.fromARGB(200, 255, 255, 255),
+      color: Color.fromARGB(255, 255, 255, 255),
+      fontSize: 13,
+      fontWeight: FontWeight.w500,
+    ),
+    labelLarge: TextStyle(
+      color: Color.fromARGB(255, 255, 255, 255),
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+    ),
+    labelMedium: TextStyle(
+      color: Color.fromARGB(255, 255, 255, 255),
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+    ),
+    titleMedium: TextStyle(
+      color: Color.fromARGB(255, 0, 0, 0),
       fontSize: 12,
+      fontWeight: FontWeight.w500,
+    ),
+    titleLarge: TextStyle(
+      color: Color.fromARGB(255, 0, 0, 0),
+      fontSize: 18,
       fontWeight: FontWeight.w500,
     ),
   ),
   tabBarTheme: TabBarTheme(
-    unselectedLabelColor: const Color.fromARGB(255, 0, 253, 38),
-    labelColor: const Color.fromARGB(255, 253, 1, 1),
+    unselectedLabelColor: const Color.fromARGB(255, 0, 0, 0),
+    labelColor: const Color.fromARGB(255, 0, 0, 0),
   ),
 );

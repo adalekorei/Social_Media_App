@@ -40,6 +40,8 @@ class CustomTextfield extends StatelessWidget {
       onTap: onTap,
       textInputAction: TextInputAction.next,
       onChanged: onChanged,
+      style: const TextStyle(color: Colors.black, fontSize: 20),
+      cursorColor: Colors.black, 
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
         prefixIcon: prefixIcon,
@@ -53,8 +55,8 @@ class CustomTextfield extends StatelessWidget {
         ),
         fillColor: Colors.grey.shade200,
         filled: true,
-        hintText: hintText,
-        hintStyle: TextStyle(color: Colors.grey.shade500),
+        hintText: hintText, 
+        hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 16),
         errorText: errorMsg,
       ),
     );

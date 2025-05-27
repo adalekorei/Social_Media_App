@@ -46,7 +46,7 @@ class _SignInScreenState extends State<SignInScreen> {
           children: [
             SizedBox(height: 20),
             SizedBox(
-              width: MediaQuery.of(context).size.width * 0.85,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: CustomTextfield(
                 controller: emailController,
                 hintText: 'Email',
@@ -66,7 +66,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             SizedBox(height: 30),
             SizedBox(
-              width: MediaQuery.of(context).size.width * 0.85,
+              width: MediaQuery.of(context).size.width * 0.8,
               child: CustomTextfield(
                 controller: passwordController,
                 hintText: 'Password',
@@ -100,13 +100,13 @@ class _SignInScreenState extends State<SignInScreen> {
             SizedBox(height: 30),
             !signInRequired
                 ? SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.9,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   child: TextButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         context.read<SignInBloc>().add(
                           SignInRequired(
-                            emailController.text,
+                            emailController.text, 
                             passwordController.text,
                           ),
                         );
@@ -126,9 +126,9 @@ class _SignInScreenState extends State<SignInScreen> {
                         vertical: 5,
                       ),
                       child: Text(
-                        'Sign in',
+                        'Sign In',
                         textAlign: TextAlign.center,
-                        style: theme.textTheme.titleMedium?.copyWith(
+                        style: theme.textTheme.bodyMedium?.copyWith(
                           color: Colors.white,
                         ),
                       ),

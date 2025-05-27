@@ -51,7 +51,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             children: [
               SizedBox(height: 20),
               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.85,
+                width: MediaQuery.of(context).size.width * 0.8,
                 child: CustomTextfield(
                   controller: emailController,
                   hintText: 'Email',
@@ -70,7 +70,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               SizedBox(height: 30),
               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.85,
+                width: MediaQuery.of(context).size.width * 0.8,
                 child: CustomTextfield(
                   controller: passwordController,
                   hintText: 'Password',
@@ -217,7 +217,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               SizedBox(height: 20),
               SizedBox(
-                width: MediaQuery.of(context).size.width * 0.85,
+                width: MediaQuery.of(context).size.width * 0.8,
                 child: CustomTextfield(
                   controller: nameController,
                   hintText: 'Name',
@@ -238,7 +238,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               SizedBox(height: MediaQuery.of(context).size.height * 0.02),
               !signUpRequired
                   ? SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.85,
+                    width: MediaQuery.of(context).size.width * 0.8,
                     child: TextButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
@@ -257,7 +257,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       style: TextButton.styleFrom(
                         elevation: 3.0,
                         backgroundColor: theme.colorScheme.outline,
-                        foregroundColor: Colors.white,
+                        foregroundColor: const Color.fromARGB(255, 0, 0, 0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(60),
                         ),
@@ -272,7 +272,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
+                            fontSize: 20,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
