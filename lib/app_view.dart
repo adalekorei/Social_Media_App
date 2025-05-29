@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:post_repository/post_repository.dart';
 import 'package:social_media/bloc/auth_bloc/auth_bloc.dart';
+import 'package:social_media/bloc/get_post_bloc/get_post_bloc.dart';
 import 'package:social_media/bloc/my_user_bloc/my_user_bloc.dart';
 import 'package:social_media/bloc/sign_in_bloc/sign_in_bloc.dart';
 import 'package:social_media/bloc/update_user_info_bloc/bloc/update_user_info_bloc.dart';
@@ -44,6 +46,12 @@ class AppView extends StatelessWidget {
                           myUserId: context.read<AuthBloc>().state.user!.uid,
                         ),
                       ),
+                ),
+                BlocProvider(
+                  create:
+                      (conxtext) =>
+                          GetPostBloc(postRepo: FirebasePostRepository())
+                            ..add(GetPosts()),
                 ),
               ],
               child: HomeScreen(),
